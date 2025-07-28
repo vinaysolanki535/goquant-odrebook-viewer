@@ -8,9 +8,9 @@ This project is a high-performance, real-time orderbook viewer built with Next.j
 
 ## 📸 Application Preview
 
-| Desktop View                                                                                                      | Mobile View                                                                                                   | Simulation History                                                                                            |
-| :---------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------ |
-| ![Main application interface](https://drive.google.com/file/d/1mZRENgwN0qs89HEdm6cDo-E2IN_L5ZiN/view?usp=sharing) | ![Mobile responsive view](https://drive.google.com/file/d/1WAUK1mS5UJ-1Wd94CgriV1oxPGl27goy/view?usp=sharing) | ![Simulation history log](https://drive.google.com/file/d/1OTbU8fZCpMViWKdjHQjE7Yl4dX7CBmuw/view?usp=sharing) |
+| Desktop View                                         | Mobile View                                       | Simulation History                                     |
+| :--------------------------------------------------- | :------------------------------------------------ | :----------------------------------------------------- |
+| ![Main application interface](./applicationView.png) | ![Mobile responsive view](./MobileResponsive.png) | ![Simulation history log](./SimulationHistoryLogs.png) |
 
 ---
 
@@ -52,7 +52,7 @@ To run this project on your local machine, follow these steps:
 1.  **Clone the repository:**
 
     ```bash
-    git clone [https://github.com/vinaysolanki535/goquant-odrebook-viewer](https://github.com/vinaysolanki535/goquant-odrebook-viewer)
+    git clone https://github.com/vinaysolanki535/goquant-odrebook-viewer
     cd goquant-odrebook-viewer
     ```
 
