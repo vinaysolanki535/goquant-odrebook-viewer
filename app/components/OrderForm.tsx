@@ -27,10 +27,15 @@ const formSchema = z
     quantity: z
       .string()
       .min(1, { message: "Quantity is required." })
-      .transform((val) => parseFloat(val))
-      .refine((val) => val > 0, {
-        message: "Quantity must be greater than zero.",
-      }),
+      .refine(
+        (val) => {
+          const num = parseFloat(val);
+          return !isNaN(num) && num > 0;
+        },
+        {
+          message: "Quantity must be a positive number.",
+        }
+      ),
   })
   .refine(
     (data) => {
