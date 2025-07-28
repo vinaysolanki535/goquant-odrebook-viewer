@@ -73,6 +73,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## 📝 Architectural Decisions & Assumptions
 
+- **Efficient WebSocket Handling:** The application uses persistent WebSocket connections instead of REST API polling. This design is highly efficient and avoids traditional rate-limiting concerns, as only one single connection is maintained at any given time. When switching venues, the existing connection is gracefully closed before a new one is established.
 - **Symbol Mapping:** A helper function (`getInstrumentName`) translates the common symbol `BTCUSDT` into the specific format required by each exchange (e.g., `BTC-USDT` for OKX, `BTC-PERPETUAL` for Deribit).
 - **Market Orders:** A simulated market order is assumed to have no price limit and will fill at any available price. The price input is disabled for this order type to make this intent clear.
 - **API Data Resilience:** The application defensively sanitizes and validates incoming WebSocket data to ensure UI stability, particularly for the Deribit snapshot which was observed to be unsorted.
